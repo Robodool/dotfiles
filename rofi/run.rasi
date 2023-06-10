@@ -1,0 +1,67 @@
+configuration {
+    display-run: " ";
+    display-drun: "  ";
+    display-window: "  ";
+    drun-display-format: "{icon} {name}";
+    font: "Source Code Pro 10";
+    modi: "run";
+}
+
+* {
+    bg: rgba(40, 44, 52, 0.1);
+    bg-alt: rgba(40, 44, 52, 0.1);
+
+    fg: #aa8e72;
+
+    background-color: @bg;
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+element {
+    padding: 12;
+    text-color: @fg;
+}
+
+element selected {
+    text-color: @fg;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+entry {
+    background-color: @fg;
+    padding: 12 0 12 3;
+    text-color: #705d4a;
+}
+
+inputbar {
+    children: [prompt, entry];
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+}
+
+mainbox {
+    children: [inputbar, listview];
+}
+
+prompt {
+    background-color: @bg;
+    enabled: true;
+    font: "Source Code Pro 12";
+    padding: 12 0 0 12;
+    text-color: @fg;
+}
+
+window {
+    transparency: "real";
+}

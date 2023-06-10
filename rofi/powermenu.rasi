@@ -1,0 +1,39 @@
+configuration {
+    font: "Source Code Pro 12";
+    background: #2E3440;
+    foreground: #ECEFF4;
+    border: 0;
+    window-padding: 5;
+    separator-style: solid;
+    separator-color: #4C566A;
+    hide-scrollbar: true;
+    location: center;
+}
+
+element {
+    padding: 5px 10px;
+    separator: true;
+    separator-height: 1;
+    spacing: 5px;
+    border-radius: 0;
+    background-color: #3B4252;
+    selected-background-color: #4C566A;
+    foreground-color: #ECEFF4;
+    selected-foreground-color: #D8DEE9;
+    font: "Source Code Pro 12";
+}
+
+element#selected {
+    background-color: #4C566A;
+    foreground-color: #D8DEE9;
+}
+
+element#normal:hover {
+    background-color: #4C566A;
+    foreground-color: #D8DEE9;
+}
+
+element#normal:selected {
+    background-color: #4C566A;
+    foreground-color: #D8DEE9;
+}
